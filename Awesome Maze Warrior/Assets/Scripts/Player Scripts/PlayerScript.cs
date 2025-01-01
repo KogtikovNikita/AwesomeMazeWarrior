@@ -35,6 +35,9 @@ public class PlayerScript : MonoBehaviour {
 	void Update () {
 		PlayerMoveKeyboard();
 		AnimatePlayer();
+		Attack();
+		IsOnGround();
+		Jump();
 	}
 
 	void FixedUpdate()
@@ -94,5 +97,36 @@ public class PlayerScript : MonoBehaviour {
 
 			}
 		}
+    }
+
+	void Attack()
+    {
+		if (Input.GetKeyDown(KeyCode.K))
+        {
+			if (!anim.GetCurrentAnimatorStateInfo(0).IsName(MyTags.ATTACK_ANIMATION) ||
+				!anim.GetCurrentAnimatorStateInfo(0).IsName(MyTags.RUN_ATTACK_ANIMATION))
+            {
+				anim.SetTrigger(MyTags.ATTACK_TRIGGER);
+            }
+        }
+    }
+
+	void IsOnGround()
+    {
+		canJump = Physics.Raycast(groudCheck.position, Vector3.down, 0.1f, groundLayer);
+
+    }
+
+	void Jump()
+    {
+		if(Input.GetKeyDown(KeyCode.Space))
+        {
+			if (canJump)
+            {
+				canJump = false;
+				myBody.MovePosition(transform.position + transform.up * jumpForce * playerSpeed);
+				anim.SetTrigger(MyTags.JUMP_TRIGGER);
+            }
+        }
     }
 }
