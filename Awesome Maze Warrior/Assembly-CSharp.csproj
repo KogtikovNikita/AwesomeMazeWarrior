@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\Enemy Scripts\EnemyDamage.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\EnemyHealth.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\EnemyScript.cs" />
+     <Compile Include="Assets\Scripts\Helper Scripts\GameplayController.cs" />
      <Compile Include="Assets\Scripts\Helper Scripts\MyTags.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\PlayerDamage.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\PlayerHealth.cs" />

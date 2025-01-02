@@ -14,6 +14,7 @@ public class EnemyHealth : MonoBehaviour {
 		enemyScript = GetComponent<EnemyScript>();
 		anim = GetComponent<Animator>();
 	}
+
 	
 	public void ApplyDamage(int damageAmount)
     {
