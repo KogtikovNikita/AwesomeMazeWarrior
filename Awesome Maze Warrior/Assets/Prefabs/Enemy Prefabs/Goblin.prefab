@@ -1179,6 +1179,7 @@ GameObject:
   - component: {fileID: 95777693182410180}
   - component: {fileID: 54200742789923470}
   - component: {fileID: 65733096503567822}
+  - component: {fileID: 114419369571008292}
   m_Layer: 0
   m_Name: Goblin
   m_TagString: Untagged
@@ -2321,6 +2322,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114419369571008292
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1986094323705140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1707a35f80546704cbc42ce7c472e013, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!137 &137399593864763122
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
