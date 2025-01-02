@@ -21,6 +21,8 @@ public class PlayerScript : MonoBehaviour {
 	public Transform groudCheck;
 	public LayerMask groundLayer;
 
+	public GameObject damagePoint;
+
 	void Awake()
     {
 		myBody = GetComponent<Rigidbody>();
@@ -129,4 +131,13 @@ public class PlayerScript : MonoBehaviour {
             }
         }
     }
+	void ActivateDamagePoint()
+	{
+		damagePoint.SetActive(true);
+	}
+
+	void DeactivateDamagePoint()
+	{
+		damagePoint.SetActive(false);
+	}
 }
