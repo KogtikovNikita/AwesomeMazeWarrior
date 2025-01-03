@@ -38,6 +38,7 @@ public class PlayerHealth : MonoBehaviour {
 			GameplayController.instance.isPlayerAlive = false;
 
 			//GAMEOVER PANEL
+			GameplayController.instance.GameOver();
         }
 
     }
